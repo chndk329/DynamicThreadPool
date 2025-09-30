@@ -1,7 +1,7 @@
-all: main
+all: test
 
-main: main.cpp DynamicThreadPool.h
-	g++ -o main main.cpp -std=c++17 -pthread
+test: test.cpp DynamicThreadPool.h
+	g++ -o test test.cpp -std=c++17 -pthread
 
 clean:
-	rm -f main
+	rm -f test
